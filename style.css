@@ -71,38 +71,34 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* padding: 0px; */
         padding: 2rem;
         background: #fff;
         box-shadow: var(--box-shadow);
+        height: 8rem;
       }
 
-      /* property for logo */
-      .logo img {
-        /* margin: .1rem ; */
+      property for logo
+      .logo{
+        margin: .1rem ;
         width: 50px;
         height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        /* border: 1px solid red; */
         /* border: 1px solid rgba(218, 213, 213, 0.879); */
         /* box-shadow: 2px 2px 7rem rgba(0, 0, 0, 0.356); */
         border-radius: 50%;
       }
-      .name {
+      .header .name {
         font-size: 2.5rem;
         font-family: algerian;
         font-weight: bolder;
-        color: var(--black);
-        margin-left: 120px;
-        margin-top: 10px;
-        color: #ff7800;
-      }
-
-      /* property for color of the grocery icon tag */
-      .header .logo i {
-        color: var(--orange);
+        /* margin-left: 120px;
+        margin-top: 10px; */
+        color:var(--orange);
+        /* border: 1px solid blue; */
       }
 
       /* property for text on the navigation tag */
@@ -332,31 +328,31 @@ section{
 {
     display: flex;
     justify-content: center;
-    border: 0px solid;
     background: url('https://focusnutritionalmedicine.files.wordpress.com/2016/07/shutterstock_350739953_small.jpg?w=2360&h=1220&crop=1');
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
    padding-bottom: 10rem;
-    height: auto;
+    height: 55rem;
     background-blend-mode: overlay;
-  
+  /* border: 1px solid; */
 }
 
 
 .home .content{
-    border: 0px solid;
+    /* border: 1px solid blue; */
     text-align: center;
     width: 60rem;
+    height: 25rem;
    background: #ffffff97;
-  padding: 2.5rem;
+  padding: 4rem;
   border-radius: 1rem;
 }
 
 .home .content h3{
     color: var(--black);
     font-size: 3rem;
-    padding-bottom: 1.8rem;   
+    /* padding-bottom: 1.8rem;    */
 }
 
 .home .content h3 span{
@@ -366,8 +362,7 @@ section{
 .home .content p{
     color: var(--light-color);
     font-size: 1.7rem;
-    line-height: 0.5;
-    padding: 1rem 0;
+    line-height: 1.8;
 }
 
 /* banner section end */
@@ -383,8 +378,9 @@ section{
 
 
 .users .box-container .box{
-  border: 0px solid;
+  /* border: 1px solid; */
   border-radius: .5rem;
+  height: 45rem;
   padding: 3rem 2rem;
   background: #fff;
   outline:var(--outline);
@@ -399,12 +395,15 @@ section{
 }
 
 .users .box-container .box img{
-  margin: 1rem 0;
-  height: 15rem;
+/* border: 2px solid blue; */
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
   border-radius: .5rem;
 }
 
 .users .box-container .box h3{
+  margin: 1.5rem 0 0 0;
   font-size: 2rem;
   line-height: 1.8;
   color: var(--black);
@@ -548,6 +547,8 @@ padding: .5rem;
 /* review starts*/
 .review .review-slider{
   padding: 1rem;
+  /* border: 1px solid red; */
+
 }
 
 
@@ -560,6 +561,8 @@ padding: .5rem;
   outline: var(--outline);
   box-shadow: var(--box-shadow);
   transition: .2s linear;
+  /* border: 1px solid blue; */
+  height:50rem;
 }
 
 
@@ -570,7 +573,7 @@ padding: .5rem;
 
 
 .review .review-slider .box img{
-  width: 22rem;
+  width: 25rem;
   border-radius: 50%;
   height: 20rem;
 }
@@ -679,3 +682,105 @@ padding: .5rem;
 }
 
 /* footer section ends  */
+
+/* media queries */
+
+@media (max-width: 991px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+    .header
+    {
+        padding: 2rem;
+    }
+    section 
+    {
+        padding: 23rem;
+
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+    display: inline-block;
+    }
+
+    .header .search-form{
+        width: 90%;
+    }
+
+    .header .navbar.active
+    {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top:110%;
+        right:-110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+    section{
+        padding: 15rem;
+    }
+    .home{
+        height: 68vh;
+    }
+
+}
+
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+   
+   
+    .heading{
+        font-size: 2.5rem;
+    }
+    .footer{
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+
+@media (max-width:420px)
+{
+    html
+    {
+        font-size: 48%;
+    }
+   
+    .home{
+        height: 70vh;
+    }
+    .heading{
+        font-size: 2.3rem;
+    }
+    .footer{
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+
