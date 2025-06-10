@@ -372,8 +372,9 @@ section{
 
 /* banner section end */
 
-/* categories starts*/
-.categories .box-container{
+
+/* our user section starts*/
+.users .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
   gap:1.5rem;
@@ -381,7 +382,7 @@ section{
 }
 
 
-.categories .box-container .box{
+.users .box-container .box{
   border: 0px solid;
   border-radius: .5rem;
   padding: 3rem 2rem;
@@ -392,22 +393,69 @@ section{
   box-shadow: var(--box-shadow);
 }
 
-.categories .box-container .box:hover{
+.users .box-container .box:hover{
  outline:var(--outline-hover);
  outline-offset: 0rem;
 }
 
-.categories .box-container .box img{
+.users .box-container .box img{
   margin: 1rem 0;
   height: 15rem;
+  border-radius: .5rem;
 }
 
-.categories .box-container .box h3{
+.users .box-container .box h3{
   font-size: 2rem;
   line-height: 1.8;
   color: var(--black);
 }
-.categories .box-container .box p{
+.users .box-container .box p{
+  font-size: 1.7rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: var(--light-color);
+
+}
+/* our user section end*/
+
+/* categories starts*/
+.foodListing .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap:1.5rem;
+  padding: 0 4rem;
+}
+
+
+.foodListing .box-container .box{
+  border: 0px solid;
+  border-radius: .5rem;
+  padding: 3rem 2rem;
+  background: #fff;
+  outline:var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.foodListing .box-container .box:hover{
+ outline:var(--outline-hover);
+ outline-offset: 0rem;
+}
+
+.foodListing .box-container .box img{
+  margin: 1rem 0;
+  height: 15rem;
+  width:22rem;
+  /* border: 1px solid black; */
+}
+
+.foodListing .box-container .box h3{
+  font-size: 2rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+.foodListing .box-container .box p{
   font-size: 1.7rem;
   line-height: 0.5;
   padding: 1rem 0;
